@@ -1,59 +1,42 @@
-// ------------------------ЗАДАЧА 1------------------------
-
-// var x1, y1, x2, y2;
-
-// x1 = prompt('Введите число x1', '');
-// y1 = prompt('Введите число y1', '');
-// x2 = prompt('Введите число x2', '');
-// y2 = prompt('Введите число y2', '');
-// var a = x1 - x2
-// var b = y1 - y2
-// function distance(x1, y1, x2, y2){
-//     var c = Math.sqrt( a*a + b*b );
-//     alert(c);
-// }
-// distance();
-
-// ------------------ЗАДАЧА 2-------------------
-
-// var arr = [4, 6, 2, 8, 1, 9, 5, 7, 6, 7];
-// function arrSum(arr){
-//     var sum = 0;
+// -----------------ЗАЧАДА 1--------------------
+// var str = prompt("", "");
+// function camelize(str) {
+//     var arr = str.split(' ');
 //     for (var i = 0; i < arr.length; i++) {
-//         sum += arr[i];
+//         arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
 //     }
-//     console.log(sum);
+//     return arr.join(' ');
 // }
-// arrSum(arr);
+// alert(camelize(str));
 
 
-// --------------------ЗАДАЧА 3--------------------
 
-// var n = 9;
-// var step = "";
-// for(var i = 1; i <= n; i++){
-//     step += i;
-//     console.log(step);
+
+// -----------------ЗАЧАДА 2--------------------
+// var n = prompt("Введите n", "");
+// var arr = [n];
+// var min;
+// for (var i = 1 ; i < 100; i++) {
+//     arr.push(Math.floor(Math.random() *100));  
 // }
-
-// ----------------------ЗАДАЧА 4---------------------
-
-// var n = prompt("Введите число карт", "");
-// for (i = 1; i <= n; i++) {
-//     console.log(i); 
-//     var min = 1;
-//     var max = i; 
-//     var rand = min + Math.floor(Math.random() * (max + 1 - min));
+// console.log(arr);
+// for (i = 0; i < arr.length; i++){
+//     for (j = 0; j < arr.length; j++){
+//         if (arr[j + 1] < arr[j]){
+//             min = arr[j + 1];
+//             arr[j + 1] = arr[j];
+//             arr[j] = min;
+//         }
+//     }
 // }
-// alert(rand);
-
-
-
-// -----------------ЗАЧАДА 5--------------------
-
-// var str = prompt("", ""); 
-// function capitalize(str) {   
-//     return str[0].toLocaleUpperCase() + str.slice(1);
+// console.log(arr);
+// for (i = 0; i < arr.length; i++){
+//     for (j = 0; j < arr.length; j++){
+//         if (arr[j + 1] > arr[j]){
+//             min = arr[j + 1];
+//             arr[j + 1] = arr[j];
+//             arr[j] = min;
+//         }
+//     }
 // }
-// alert(capitalize(str));
-
+// console.log(arr);
