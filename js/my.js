@@ -1,42 +1,42 @@
-// -----------------ЗАЧАДА 1--------------------
-// var str = prompt("", "");
-// function camelize(str) {
-//     var arr = str.split(' ');
-//     for (var i = 0; i < arr.length; i++) {
-//         arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+// Создайте массив d1 с числовыми величинами 45, 78, 10, 3. 
+// Добавьте в массив d1 еще одно число ( d1[7] = 100). 
+// Выведите в консоль весь массив и его элементы с индексами 6 и 7.
+
+// var d1 = [45, 78 ,10, 3];
+// d1[7] = 100;
+// console.log(d1, d1[6]);
+
+// Создайте массив d3 с числовыми величинами 45,78,10,3. 
+// Добавьте в массив d3 еще одно число (например, d[7] = 100) 
+// Посчитайте в переменную sum3 сумму чисел в нем, 
+// при помощи цикла for/in.
+
+// var d3 = [45, 78 ,10, 3];
+// d3[7] = 100;
+// console.log(d3);
+// var sum3 = 0;
+// for (var key in d3){
+//     sum3 += d3[key];
+// }
+// console.log(sum3);
+
+
+// (*) Создать объект obj, с методами method1(),method2() и method3(). 
+// В методе method3() должна возвращаться строка «метод3». 
+// Сделайте так, чтобы было возможно выполнение 
+// кода obj.method1().method2().method3().
+
+// var obj = {
+//     name: 'метод3',
+//     method1: function(){
+//         return this;
+//     },
+//     method2: function(){
+//         return this;
+//     },
+//     method3: function(){    
+//         console.log(this.name);
+//         return this;
 //     }
-//     return arr.join(' ');
-// }
-// alert(camelize(str));
-
-
-
-
-// -----------------ЗАЧАДА 2--------------------
-// var n = prompt("Введите n", "");
-// var arr = [n];
-// var min;
-// for (var i = 1 ; i < 100; i++) {
-//     arr.push(Math.floor(Math.random() *100));  
-// }
-// console.log(arr);
-// for (i = 0; i < arr.length; i++){
-//     for (j = 0; j < arr.length; j++){
-//         if (arr[j + 1] < arr[j]){
-//             min = arr[j + 1];
-//             arr[j + 1] = arr[j];
-//             arr[j] = min;
-//         }
-//     }
-// }
-// console.log(arr);
-// for (i = 0; i < arr.length; i++){
-//     for (j = 0; j < arr.length; j++){
-//         if (arr[j + 1] > arr[j]){
-//             min = arr[j + 1];
-//             arr[j + 1] = arr[j];
-//             arr[j] = min;
-//         }
-//     }
-// }
-// console.log(arr);
+// };
+// obj.method1().method2().method3();
